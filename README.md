@@ -77,11 +77,11 @@ When grading your assignment, we will test your solution against the following e
       part1 "II power III power II"
       DXII
 
-Notes: 
+### Notes: 
 
 There are many possible ways to implement this calculator. You can choose a top-down or a bottom-up parser, implemented in a variety of strategies, for your calculator. You may be tempted to quickly put your solution together, but to succeed, you’d have to apply some of the theoretical concepts we have studied in class.
 
-Extra Test Cases:
+### Extra Test Cases:
 
 These are the additional test cases I created:
 
