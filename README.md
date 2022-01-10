@@ -80,3 +80,120 @@ When grading your assignment, we will test your solution against the following e
 Notes: 
 
 There are many possible ways to implement this calculator. You can choose a top-down or a bottom-up parser, implemented in a variety of strategies, for your calculator. You may be tempted to quickly put your solution together, but to succeed, you’d have to apply some of the theoretical concepts we have studied in class.
+
+Extra Test Cases:
+
+These are the additional test cases I created:
+
+Tests additional incorrect roman numerals: 
+
+    II minus IIII 
+
+             ^ 
+
+    Quid dicis? You offend Caesar with your sloppy lexical habits!
+
+Tests additional incorrect roman numerals:
+
+    II minus XXXXX
+
+             ^
+
+    Quid dicis? You offend Caesar with your sloppy lexical habits!
+
+Tests having a lexical error inside parentheses:
+
+    III plus {VX times II] power II
+
+             ^
+
+    Quid dicis? You offend Caesar with your sloppy lexical habits!
+
+Tests having a lexical error first in the input:
+
+    VX power I
+
+    ^
+
+    Quid dicis? You offend Caesar with your sloppy lexical habits!
+
+Tests having a lexical error last in the input:
+
+    X power VX
+
+            ^
+               
+    Quid dicis? You offend Caesar with your sloppy lexical habits!
+
+Tests if a symbol would work in the input:
+
+    XXV + V
+
+        ^
+
+    Quid dicis? You offend Caesar with your sloppy lexical habits!
+
+Tests for incorrect facing parentheses:
+
+    } minus I plus (
+
+    ^
+
+    Quid dicis? True Romans would not understand your syntax!
+
+Tests for a lack of roman numerals to calculate:
+
+    { minus I plus }
+
+    ^
+
+    Quid dicis? True Romans would not understand your syntax!
+
+Tests for only one closed parenthesis:
+
+    X minus I plus }
+
+                     ^
+
+    Quid dicis? True Romans would not understand your syntax!
+
+Tests for only one open parenthesis:
+
+    X minus { I plus
+
+              ^
+              
+    Quid dicis? True Romans would not understand your syntax!
+
+Tests for missing roman numeral:
+
+    X minus
+
+            ^
+
+    Quid dicis? True Romans would not understand your syntax!
+
+Tests what occurs for a single term:
+
+    X
+
+    X
+
+An additional test to check if power performs correctly:
+
+    II power I power II power III power I
+
+    II
+
+Test if modulo works properly:
+
+    V modulo II
+
+    I
+
+Tests for the case where zero is output, but from modulo, not divide:
+
+    IV modulo II
+
+    ^
+    Quid dicis? Arab merchants haven't left for India yet!
